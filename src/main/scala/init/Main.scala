@@ -76,9 +76,8 @@ object Main {
     //import dataframes.DataSources
    // DataSources.code(spark)
 
-
     //working with rdds
-     Rdds.rdds(spark = spark)
+     Rdds.rdds(spark = spark,mydf(spark))
 
   }
 
@@ -92,7 +91,6 @@ object Main {
     val spark = SparkSession.builder().master("local[2]").appName("local App").getOrCreate()
     spark
   }
-
 
   def mydf(spark: SparkSession) = {
 
