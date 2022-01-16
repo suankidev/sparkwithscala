@@ -5,7 +5,7 @@ import org.apache.log4j.{Appender, ConsoleAppender, Layout, Level, LogManager, S
 import org.apache.spark.sql.functions.col
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
 import com.suanki.scalaBasics.ForAwayCode
-import com.suanki.rdds.Rdds
+import com.suanki.rdds.{AdvanceRdds, Rdds}
 import com.suanki.dataframes.{AggregationLearn, DataFrames, WorkingWithComplextType, WorkingWithDifferentTypeChapter6}
 
 
@@ -77,8 +77,8 @@ object Main {
    // DataSources.code(spark)
 
     //working with rdds
-     Rdds.rdds(spark = spark,mydf(spark))
-
+     //Rdds.rdds(spark = spark,mydf(spark))
+     AdvanceRdds.code(spark=spark,mydf(spark))
   }
 
   def prod: SparkSession = {

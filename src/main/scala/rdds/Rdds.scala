@@ -156,7 +156,6 @@ object Rdds {
     println(s"storage level ${words.getStorageLevel} \n number of partition ${words.getNumPartitions}")
 
 
-32
     //    r.foreach(println)
 
     //checkpointing
@@ -169,10 +168,6 @@ object Rdds {
 
     //pipe to execute linux command
     words.pipe("wc -l").collect()
-
-
-
-
 
     println()
 
